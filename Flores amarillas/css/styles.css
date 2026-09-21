@@ -1,0 +1,71 @@
+/* =====================================================================
+   GALAXIA DE FLORES AMARILLAS — Estilos (solo universo)
+   ===================================================================== */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --dorado: #FFD700;
+  --dorado-claro: #FFC107;
+  --ambar: #FF8F00;
+  --ambar-oscuro: #FF6F00;
+  --crema: #FFF8E7;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: radial-gradient(circle at 50% 30%, #0a0a1a, #000 80%);
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  position: relative;
+}
+
+/* ================= TÍTULO ================= */
+.titulo {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2.2rem, 8vw, 4.5rem);
+  color: var(--dorado);
+  text-shadow: 0 0 20px var(--dorado-claro),
+               0 0 40px #FFA000,
+               0 0 80px var(--ambar);
+  z-index: 100;
+  pointer-events: none;
+  letter-spacing: 2px;
+  animation: brilloTitulo 3s ease-in-out infinite alternate;
+}
+
+@keyframes brilloTitulo {
+  0%   { text-shadow: 0 0 20px var(--dorado), 0 0 40px var(--dorado-claro), 0 0 60px #FFA000; }
+  100% { text-shadow: 0 0 30px var(--dorado), 0 0 60px var(--dorado-claro), 0 0 100px var(--ambar), 0 0 140px var(--ambar-oscuro); }
+}
+
+/* ================= CANVAS ================= */
+#canvasFondo {
+  position: absolute;
+  inset: 0;
+  display: block;
+  z-index: 1;
+}
+
+#canvasEstela {
+  position: absolute;
+  inset: 0;
+  display: block;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* ================= AUDIO OCULTO ================= */
+#audioFondo {
+  display: none;
+}

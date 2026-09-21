@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Galaxia de Flores Amarillas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <h1 class="titulo">Flores Amarillas para my girl</h1>
+
+  <canvas id="canvasFondo" aria-hidden="true"></canvas>
+  <canvas id="canvasEstela" aria-hidden="true"></canvas>
+
+  <!-- Reproductor oculto (solo controla el audio, sin UI) -->
+  <audio id="audioFondo" loop></audio>
+
+  <!-- Scripts en orden -->
+  <script src="js/config.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/photoFlower.js"></script>
+  <script src="js/trail.js"></script>
+  <script src="js/photos.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
